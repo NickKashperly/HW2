@@ -1,0 +1,6 @@
+package ru.geekbrains.lesson7.Cddf;
+public class BusinessLogicException extends Exception {
+    public BusinessLogicException(String message) {
+        super(message);
+    }
+}
