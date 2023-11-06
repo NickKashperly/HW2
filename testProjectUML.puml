@@ -1,0 +1,86 @@
+@startuml
+class additionalInformation.Student {
+- String name
++ int age
+# String id
++ void study()
+# void takeExam()
+- void sleep()
++ {static} void staticMethod()
++ String toString()
+}
+interface testElement.Drivable {
+~ void drive()
+}
+abstract class testElement.Vehicle {
+~ String make
+~ {abstract}void start()
+}
+enum testElement.FuelType {
++  PETROL
++  DIESEL
++  ELECTRIC
+}
+class testElement.ElectricCar {
+~ int batteryLife
+~ void charge()
+~ void start()
+}
+class testElement.Main {
++ {static} void main(String[])
+}
+class testElement.Car {
+~ FuelType fuelType
+- int speed
++ String color
++ void accelerate()
++ void brake()
++ void drive()
+~ void start()
+}
+interface additionalInformation.Payable {
+~ void payTuition()
+}
+class additionalInformation.CollegeStudent {
+~ String collegeName
++ void payTuition()
+}
+class additionalInformation.Main {
++ {static} void main(String[])
+}
+abstract class testConnection.Animal {
+~ void breathe()
+}
+interface testConnection.Eatable {
+~ void eat()
+}
+class testConnection.Mammal {
+}
+class testConnection.Human {
+~ Cat petCat
++ void eat()
+~ void ownCat(Cat)
+}
+class testConnection.Cat {
+~ void meow()
+}
+class testConnection.House {
+~ Room room
+}
+class testConnection.Room {
+~ void description()
+}
+class testConnection.Main {
++ {static} void main(String[])
+}
+
+
+testElement.Car <|-- testElement.ElectricCar
+testElement.Drivable <|.. testElement.Car
+testElement.Vehicle <|-- testElement.Car
+additionalInformation.Payable <|.. additionalInformation.CollegeStudent
+additionalInformation.Student <|-- additionalInformation.CollegeStudent
+testConnection.Animal <|-- testConnection.Mammal
+testConnection.Eatable <|.. testConnection.Human
+testConnection.Mammal <|-- testConnection.Human
+@enduml

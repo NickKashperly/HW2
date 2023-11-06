@@ -1,4 +1,4 @@
-package additionalInformation;
+package testProject.additionalInformation;
 
 // Интерфейс с абстрактным методом
 interface Payable {

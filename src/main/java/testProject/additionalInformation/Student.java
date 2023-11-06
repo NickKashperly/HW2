@@ -1,4 +1,4 @@
-package additionalInformation;
+package testProject.additionalInformation;
 
 // Класс с различными видами атрибутов и методов
 public class Student {

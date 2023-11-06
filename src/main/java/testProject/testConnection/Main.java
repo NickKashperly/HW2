@@ -1,4 +1,4 @@
-package testConnection;
+package testProject.testConnection;
 // Абстрактный класс (Abstract Class)
 abstract class Animal {
     void breathe() {

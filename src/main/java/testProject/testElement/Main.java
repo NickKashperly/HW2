@@ -1,4 +1,4 @@
-package testElement;
+package testProject.testElement;
 
 
 // Интерфейс (Interface)

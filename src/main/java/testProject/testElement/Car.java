@@ -1,4 +1,4 @@
-package testElement;
+package testProject.testElement;
 
 // Класс (Class) с реализацией интерфейса (Realization)
 public class Car extends Vehicle implements Drivable {
